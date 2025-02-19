@@ -45,9 +45,9 @@ LABEL maintainer="Jürrens, Eike Hinderk <e.h.juerrens@52north.org>" \
       org.opencontainers.image.description="Example for labelling images and container following https://wiki.52north.org/Documentation/ImageAndContainerLabelSpecification"
 
 ARG GIT_COMMIT
-LABEL org.opencontainers.image.revision "${GIT_COMMIT}"
+LABEL org.opencontainers.image.revision="${GIT_COMMIT}"
 
 ARG BUILD_DATE
-LABEL org.opencontainers.image.created "${BUILD_DATE}"
+LABEL org.opencontainers.image.created="${BUILD_DATE}"
 
 CMD /bin/sh -c 'while true; do echo -e ".\c"; sleep 3; done'
